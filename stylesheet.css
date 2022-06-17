@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), 
+    rgba(136, 136, 206, 0.7) ), url("officeimg.jpg");
+    font-family: 'poppins',sans-serif;
+
+}
+.box{
+    display:flex;
+    justify-content: center;
+
+}
+#title, #description{
+    text-align: center;
+    color:aliceblue;
+}
+label{
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+#survey-form{
+    background-color: black;
+    opacity: 0.6;
+    width: 700px;
+    border-radius: 5px;
+    max-height: fit-content;
+}
