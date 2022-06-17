@@ -13,21 +13,48 @@
     <div class="box">
         <form id="survey-form">
             <div class="formlabel">
-            <label id="name-label">Name</label><br>
-            <input type="text" id="name" ><br>
-            <label id="email-label">Email</label><br>
-            <input type="email" id="email"><br>
-            <label id="age-label">Age</label><br>
-            <input type= "number" id="number"><br>
-            <label id="select-label">Would you recommend freeCodeCamp to a friend?</label><br>
-            <select id="dropdown">
-            <option value="">(Select one)</option>
-            <option value="1">Student</option>
-            <option value="2">Full time learner</option>
-            <option value="3">Full time job</option>
-            <option value="4">prefer not to say</option>
-            <option value="5">others</option>
-            </select>
+                <label id="name-label">Name</label><br>
+                <input type="text" id="name" ><br>
+                <label id="email-label">Email</label><br>
+                <input type="email" id="email"><br>
+                <label id="age-label">Age</label><br>
+                <input type= "number" id="number"><br>
+                <label id="select-label">Would you recommend freeCodeCamp to a friend?</label><br>
+                <select id="dropdown">
+                <option value="">(Select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Full time learner</option>
+                <option value="3">Full time job</option>
+                <option value="4">prefer not to say</option>
+                <option value="5">others</option>
+                </select>
+            </div>
+            <div class="radio">
+            <p>Would you recommend freeCodeCamp to a friend</p>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> Definetly</label>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> May be</label>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> Not Sure</label>
+            </div>
+            <div class="feature">
+                <p>What is your favorite feature of freeCodeCamp? </p><br>
+                <select id="feature">
+                <option value="1">Select and option</option>
+                <option value="2">Challenge</option>
+                <option value="3">Community</option>
+                <option value="4">Project</option>
+                <option value="5">Open process</option>
+
+                </select>
+            </div>
+            <div class="suggestion">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
+                <label><input type="checkbox"></label>
             </div>
             
         </form>

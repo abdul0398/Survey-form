@@ -14,13 +14,33 @@ body{
     color:aliceblue;
 }
 label{
-    padding-bottom: 10px;
+    display:flex;
+    align-items: center;
     color: aliceblue;
 }
 #survey-form{
-    background-color: black;
-    opacity: 0.6;
-    width: 700px;
+    padding: 40px 50px;
+    background: rgb(65, 62, 62);
     border-radius: 5px;
-    max-height: fit-content;
+    width: 700px;
+}
+.formlabel input, #dropdown, .feature select{
+    display:inline;
+    width: 100%;
+    padding: 6px 12px;
+    font-size:medium;
+}
+.radio input{
+    display: inline-block;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem
+}
+.radio label{
+    margin-bottom: 0.625rem;
+}
+.radio p, .feature p{
+    display:inline-block;
+    margin-top: 20px;
+    color:aliceblue;
+
 }
