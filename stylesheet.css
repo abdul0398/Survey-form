@@ -13,10 +13,12 @@ body{
     text-align: center;
     color:aliceblue;
 }
-label{
+label, .suggestion p{
     display:flex;
     align-items: center;
     color: aliceblue;
+    font-size: larger;
+    margin-bottom:0.5rem;
 }
 #survey-form{
     padding: 40px 50px;
@@ -30,10 +32,11 @@ label{
     padding: 6px 12px;
     font-size:medium;
 }
-.radio input{
+.radio input,.suggestion input{
     display: inline-block;
-    margin-right: 0.625rem;
-    margin-bottom: 0.625rem
+    margin-right: 0.7rem;
+    margin-bottom: 0,7rem;
+
 }
 .radio label{
     margin-bottom: 0.625rem;
@@ -43,4 +46,18 @@ label{
     margin-top: 20px;
     color:aliceblue;
 
+}
+span{
+    font-size: small;
+}
+input[type="checkbox"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+textarea{
+    width:100%;
+    max-width: 700px;
+    height: 150px;
+    font-size: large;
 }
