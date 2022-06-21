@@ -14,11 +14,11 @@
         <form id="survey-form">
             <div class="formlabel">
                 <label id="name-label">Name</label><br>
-                <input type="text" id="name" ><br>
+                <input type="text" id="name" required><br>
                 <label id="email-label">Email</label><br>
-                <input type="email" id="email"><br>
+                <input type="email" id="email" required><br>
                 <label id="age-label">Age</label><br>
-                <input type= "number" id="number"><br>
+                <input type= "number" id="number" min="1" max="100" placeholder="Enter your age here" value="age"><br>
                 <label id="select-label">Would you recommend freeCodeCamp to a friend?</label><br>
                 <select id="dropdown">
                 <option value="">(Select one)</option>
@@ -31,9 +31,9 @@
             </div>
             <div class="radio">
             <p>Would you recommend freeCodeCamp to a friend</p>
-            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> Definetly</label>
-            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> May be</label>
-            <label id="label"><input type="radio" id="definetly" name="user-recommendation"> Not Sure</label>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation" value="Definetly"> Definetly</label>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation" value="May be"> May be</label>
+            <label id="label"><input type="radio" id="definetly" name="user-recommendation" value="Not sure"> Not Sure</label>
             </div>
             <div class="feature">
                 <p>What is your favorite feature of freeCodeCamp? </p><br>
@@ -48,21 +48,21 @@
             </div>
             <div class="suggestion">
                 <p>What would you like to see improved?<span>(Check all that apply)</span></p>
-                <label><input type="checkbox">Front-end projects</label>
-                <label><input type="checkbox">Back-end Projects</label>
-                <label><input type="checkbox">Data Visualization</label>
-                <label><input type="checkbox">Challenges</label>
-                <label><input type="checkbox">Open Source Community</label>
-                <label><input type="checkbox">Gitter help rooms</label>
-                <label><input type="checkbox">Videos</label>
-                <label><input type="checkbox">City Meetups</label>
-                <label><input type="checkbox">Wiki</label>
-                <label><input type="checkbox">Forum</label>
-                <label><input type="checkbox">Additional Courses</label>
+                <label><input type="checkbox" value="Frond-end">Front-end projects</label>
+                <label><input type="checkbox" value="Back-end">Back-end Projects</label>
+                <label><input type="checkbox" value="Data Visualization">Data Visualization</label>
+                <label><input type="checkbox" value="Challenge">Challenges</label>
+                <label><input type="checkbox" value="open Source">Open Source Community</label>
+                <label><input type="checkbox" value="gitter help">Gitter help rooms</label>
+                <label><input type="checkbox" value="Videos">Videos</label>
+                <label><input type="checkbox" value="city Meetups">City Meetups</label>
+                <label><input type="checkbox" value="Wiki">Wiki</label>
+                <label><input type="checkbox" value="Forum">Forum</label>
+                <label><input type="checkbox" value="Additional Courses">Additional Courses</label>
+                <textarea rows="4" cols="15" placeholder="Enter your comment here..."></textarea>
+                <input type="submit" id="submit" name="submit">
             </div>
-            <textarea rows="4" cols="15" placeholder="Enter your comment here...">
-
-            </textarea>
+            
         </form>
     </div>
     
